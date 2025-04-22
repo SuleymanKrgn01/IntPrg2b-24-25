@@ -1,0 +1,22 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+
+    Layout = "_UserLayout1";
+
+}
+
+
+<h3>Gelen Numara : </h3> @ViewBag.GelenNumara
+
+@if (ViewBag.Tip  is not null)
+{
+    <h3>Gelen Tip : </h3> @ViewBag.Tip
+}
+
+
+@if (ViewBag.No is not null)
+{
+    <h3>Gelen No : </h3> @ViewBag.No
+}

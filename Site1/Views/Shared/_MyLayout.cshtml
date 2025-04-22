@@ -1,0 +1,22 @@
+﻿<html>
+<head>
+    <title>Özel Şablon</title>
+
+    @RenderSection("MyStyle", false)
+
+
+</head>
+<body>
+
+    <h1>
+        Özel Şablonum
+    </h1>
+    <br />
+    <br />
+    <div>
+        @RenderBody()
+    </div>
+
+    @RenderSection("MyScript", true)
+</body>
+</html>

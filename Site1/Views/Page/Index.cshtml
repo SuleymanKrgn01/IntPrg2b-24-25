@@ -1,0 +1,35 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+
+    Razor syntax
+*@
+@{
+}
+
+
+<div>
+    @{
+        var sayi = new Random().Next(10, 20);
+        var r = new Random();
+        //r.Next(10, 30);
+    }
+
+    <b>Üretilen Sayı : </b> @sayi
+    <b>Üretilen Sayının 10 fazlası : </b> @(sayi + 10)
+
+</div>
+<div>
+    <ul>
+
+        @for (int i = 0; i < 10; i++)
+        {
+            <li>
+                <b>@(i + 1). Sayı : </b>
+                @r.Next(10, 30)
+            </li>
+        }
+
+    </ul>
+
+
+</div>
