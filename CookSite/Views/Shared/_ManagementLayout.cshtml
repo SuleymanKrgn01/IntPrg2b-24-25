@@ -183,15 +183,50 @@
                         </ul>
                     </li>
 
-                    <li> <a aria-expanded="false" asp-controller="ManagementUser" asp-action="Index">
-                        <i class="icon icon-globe-2"> </i><span class="nav-tex">Users</span>
+                    <li> <a aria-expanded="false" asp-controller="User" asp-action="Index" asp-area="Management">
+                        <i class="icon icon-globe-2"> </i><span class="nav-tex">User</span>
                     </a></li>
 
                     <li>
-                        <a aria-expanded="false" asp-controller="ManagementCookTypes" asp-action="Index">
+                        <a aria-expanded="false" asp-controller="CookType" asp-action="Index" asp-area="Management">
                             <i class="icon icon-globe-2"> </i><span class="nav-tex">CookTypes</span>
                         </a>
                     </li>
+                    <li>
+                        <a aria-expanded="false" asp-controller="unit" asp-action="Index" asp-area="Management">
+                            <i class="icon icon-globe-2"> </i><span class="nav-tex">Unit</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a aria-expanded="false" asp-controller="Comment" asp-action="Index" asp-area="Management">
+                            <i class="icon icon-globe-2"> </i><span class="nav-tex">Comment</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a aria-expanded="false" asp-controller="Ingredient" asp-action="Index" asp-area="Management">
+                            <i class="icon icon-globe-2"> </i><span class="nav-tex">Ingredient</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a aria-expanded="false" asp-controller="Recipe" asp-action="Index" asp-area="Management">
+                            <i class="icon icon-globe-2"> </i><span class="nav-tex">Recipe</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a aria-expanded="false" asp-controller="" asp-action="Index" asp-area="Management">
+							<i class="icon icon-globe-2"> </i><span class="nav-tex">Media</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a aria-expanded="false" asp-controller="Serring" asp-action="Index" asp-area="Management">
+                            <i class="icon icon-globe-2"> </i><span class="nav-tex">Setting</span>
+                        </a>
+                    </li>
+                    
 
                     <li class="nav-label">Apps</li>
                     <li><a class="has-arrow" href="javascript:void()" aria-expanded="false"><i

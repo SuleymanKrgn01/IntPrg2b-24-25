@@ -1,0 +1,16 @@
+﻿@{
+	if (User.Identity.IsAuthenticated)// kullanıcının oturum açıp açmadığını gösterir
+	{
+		<div>
+			Merhaba@(User.FindFirst("Fullname")?.Value)
+			<a asp-controller="Index" asp-action="Home">Anasayfa</a>
+			<a asp-controller="Index" asp-action="Home" asp-area="Management">Yönetim Paneli</a>
+			<a asp-controller="account" asp-action="Logout">Çıkış</a>
+		</div>
+	}
+	else
+	{
+		<a asp-action="Login" asp-controller="account">	Giriş </a>
+	}
+
+}
